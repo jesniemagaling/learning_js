@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Product Cards</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Product Management</h1>
+
+      <div class="form-section">
+        <h2>Add New Product</h2>
+        <form id="productForm">
+          <div class="form-group">
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" required />
+          </div>
+          <div class="form-group">
+            <label for="productPrice">Price ($):</label>
+            <input type="number" id="productPrice" step="0.01" required />
+          </div>
+          <div class="form-group">
+            <label for="productImage">Image URL:</label>
+            <input
+              type="url"
+              id="productImage"
+              placeholder="e.g., https://via.placeholder.com/150"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="productDescription">Description:</label>
+            <textarea id="productDescription" rows="3" required></textarea>
+          </div>
+          <button type="submit" id="addProductBtn">Add Product</button>
+        </form>
+      </div>
+
+      <div class="products-display-section">
+        <h2>Your Products</h2>
+        <div id="productsGrid"></div>
+        <p id="noProductsMessage" class="hidden">
+          No products added yet. Start adding some!
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
