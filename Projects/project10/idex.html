@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flight Booking UI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="booking-form">
+      <!-- From - To -->
+      <div class="form-group">
+        <label>From - To</label>
+        <input type="text" id="fromToInput" value="Lahore - Karachi" />
+        <span class="swap-icon" title="Swap">⇄</span>
+      </div>
+
+      <!-- Trip Type -->
+      <div class="form-group">
+        <label>Trip</label>
+        <select id="tripType">
+          <option>Return</option>
+          <option>One Way</option>
+        </select>
+      </div>
+
+      <!-- Depart - Return -->
+      <div class="form-group">
+        <label>Depart - Return</label>
+        <input type="text" placeholder="07 Nov 22 - 13 Nov 22" />
+      </div>
+
+      <!-- Passenger - Class -->
+      <div class="form-group">
+        <label>Passenger - Class</label>
+        <input type="text" placeholder="1 Passenger, Economy" />
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
